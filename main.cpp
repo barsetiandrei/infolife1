@@ -1,5 +1,4 @@
-#include<cstdio>
-#include<cstdlib>
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -23,18 +22,18 @@ int main ()
            {
 
 
-            cout<<"Doar scrieti unitatea de masura de exemplu: metri, apoi scrieti o valoare"<<endl<<endl;
-            cout<<"Puteti converti unitatile de masura:";cout<<endl;
-            cout<<"metri,decimetri,hectometri,decametri,decimetri,milimetri,centimetri";cout<<endl;
-            cout<<"metri cubi,decimetri cubi,etc...";cout<<endl;
-            cout<<"metri patrati,decimetri patrati,etc...";cout<<endl;
-            cout<<"grade fahrenheit,celsius,kelvin";cout<<endl;
-            cout<<"kilograme,miligrame,decigrame,decagrame,hectograme,centigrame,grame";cout<<endl;
-            cout<<"bar,psi";cout<<endl;
-            cout<<"minute,ore,secunde,milisecunde";cout<<endl;
-            cout<<"litri/100km,mile/galon,kilometru la litru";cout<<endl;
-            cout<<"kg/m^3, g/m^3, g/cm^3";cout<<endl;
-            cout<<"jouli,kcal,cal";cout<<endl;
+            cout<<"Doar scrieti unitatea de masura de exemplu: metri, apoi scrieti o valoare"<<endl;cout<<endl;
+            cout<<"Puteti converti unitatile de masura:";cout;cout<<endl;
+            cout<<"Lungime:metri,decimetri,hectometri,decametri,decimetri,milimetri,centimetri";cout<<endl;cout<<endl;
+            cout<<"Volum:metri cubi,decimetri cubi,etc...";cout<<endl;cout<<endl;
+            cout<<"Arie:metri patrati,hectare,decimetri patrati,etc...";cout<<endl;cout<<endl;
+            cout<<"Temperatura:grade fahrenheit,celsius,kelvin";cout<<endl;cout<<endl;
+            cout<<"Masa:kilograme,miligrame,decigrame,decagrame,hectograme,centigrame,grame";cout<<endl;cout<<endl;
+            cout<<"Presiune:bar,psi";cout<<endl;cout<<endl;
+            cout<<"Timp:minute,ore,secunde,milisecunde";cout<<endl;cout<<endl;
+            cout<<"Consum combustibil:litri/100km,mile/galon,kilometru la litru";cout<<endl;cout<<endl;
+            cout<<"Densitate:kg/m^3, g/m^3, g/cm^3";cout<<endl;cout<<endl;
+            cout<<"Energie:jouli,kcal,cal";cout<<endl;cout<<endl;
             cout<<endl;}
     // !Lungime!
       else  if(var=="metri")
@@ -103,7 +102,7 @@ int main ()
 
 
             //  !Arie!
-          else  if(var=="metri patrati")
+          else  if(var=="metri_patrati")
        {cin>>x;
         cout<<x; cout<<"metri patrati ="<<x/1000000<<"kilometri patrati"<<endl;
          cout<<x; cout<<"metri patrati ="<<x/10000<<"hectare"<<endl;
@@ -112,7 +111,7 @@ int main ()
             cout<<x; cout<<"metri patrati ="<<x*100<<"decimetri patrati"<<endl;
              cout<<x; cout<<"metri patrati ="<<x*10000<<"centimetri patrati"<<endl;}
 
-       else if(var=="centimetri patrati")
+       else if(var=="centimetri_patrati")
          { cin>>x;
                  cout<<x; cout<<"centimetri patrati ="<<x/10000000000<<"kilometri patrati"<<endl;
          cout<<x; cout<<"centimetri patrati ="<<x/100000000<<"hectare patrati"<<endl;
@@ -121,7 +120,7 @@ int main ()
             cout<<x; cout<<"centimetri patrati ="<<x/100<<"decimetri patrati"<<endl;
              cout<<x; cout<<"centimetri patrati ="<<x/10000<<"metri patrati"<<endl;}
 
-       else if(var=="decimetri patrati")
+       else if(var=="decimetri_patrati")
          { cin>>x;
         cout<<x; cout<<"centimetri patrati ="<<x/100000000<<"kilometri patrati"<<endl;
          cout<<x; cout<<"decimetri patrati ="<<x/1000000<<"hectare patrati"<<endl;
@@ -130,7 +129,7 @@ int main ()
             cout<<x; cout<<"decimetri patrati ="<<x*100<<"centimetri patrati"<<endl;
              cout<<x; cout<<"decimetri patrati ="<<x/100<<"metri patrati"<<endl;}
 
-       else if(var=="decametri patrati")
+       else if(var=="decametri_patrati")
          { cin>>x;
         cout<<x; cout<<"decametri patrati ="<<x/10000<<"kilometri patrati"<<endl;
          cout<<x; cout<<"decametri patrati ="<<x/100<<"hectare patrati"<<endl;
@@ -139,15 +138,15 @@ int main ()
             cout<<x; cout<<"decametri patrati ="<<x*1000000<<"centimetri patrati"<<endl;
              cout<<x; cout<<"decametri patrati ="<<x*100<<"metri patrati"<<endl;}
 
-      else  if(var=="hectare patrati")
+      else  if(var=="hectare")
          { cin>>x;
-         cout<<x; cout<<"hectare patrati ="<<x/100<<"kilometri patrati"<<endl;
-         cout<<x; cout<<"hectare patrati ="<<x*1000<<"decametri patrati"<<endl;
-          cout<<x; cout<<"hectare patrati ="<<x*1000000<<"decimetri patrati"<<endl;
-           cout<<x; cout<<"hectare patrati ="<<x*10000000000<<"milimetri patrati"<<endl;
-            cout<<x; cout<<"hectare patrati ="<<x*100000000<<"centimetri patrati"<<endl;
-             cout<<x; cout<<"hectare patrati ="<<x*10000<<"metri patrati"<<endl;}
-       else if(var=="milimetri patrati")
+         cout<<x; cout<<"hectare ="<<x/100<<"kilometri patrati"<<endl;
+         cout<<x; cout<<"hectare ="<<x*1000<<"decametri patrati"<<endl;
+          cout<<x; cout<<"hectare ="<<x*1000000<<"decimetri patrati"<<endl;
+           cout<<x; cout<<"hectare ="<<x*10000000000<<"milimetri patrati"<<endl;
+            cout<<x; cout<<"hectare ="<<x*100000000<<"centimetri patrati"<<endl;
+             cout<<x; cout<<"hectare ="<<x*10000<<"metri patrati"<<endl;}
+       else if(var=="milimetri_patrati")
         {cin>>x;
         cout<<x; cout<<"milimetri patrati ="<<x*1000000000000<<"kilometri patrati"<<endl;
          cout<<x; cout<<"milimetri patrati ="<<x*100000000<<"decametri patrati"<<endl;
@@ -168,7 +167,7 @@ int main ()
 
 
            // Volum!!!
-  else if(var=="metri cubi")
+  else if(var=="metri_cubi")
         {cin>>x;
         cout<<x; cout<<"metri cubi ="<<x*1000000000<<"kilometri"<<endl;
          cout<<x; cout<<"metri cubi ="<<x*1000000<<"hectometri"<<endl;
@@ -177,7 +176,7 @@ int main ()
             cout<<x; cout<<"metri cubi ="<<x/1000<<"decimetri"<<endl;
              cout<<x; cout<<"metri cubi ="<<x/1000000<<"centimetri"<<endl;}
 
-       else if(var=="centimetri cubi")
+       else if(var=="centimetri_cubi")
          { cin>>x;
          cout<<x; cout<<"centimetri cubi ="<<x/1000000000000000<<"kilometri cubi"<<endl;
           cout<<x; cout<<"centimetri cubi ="<<x/1000000000000<<"hectometri cubi"<<endl;
@@ -185,7 +184,7 @@ int main ()
             cout<<x; cout<<"centimetri cubi ="<<x/1000<<"decimetri cubi"<<endl;
              cout<<x; cout<<"centimetri cubi ="<<x/1000000<<"metri cubi cubi"<<endl;
               cout<<x; cout<<"centimetri cubi ="<<x*1000<<"milimetri cubi"<<endl;}
-       else if(var=="decimetri cubi")
+       else if(var=="decimetri_cubi")
          { cin>>x;
          cout<<x; cout<<"decimetri cubi ="<<x/1000000000000<<"kilometri cubi"<<endl;
           cout<<x; cout<<"decimetri cubi ="<<x/1000000000<<"hectometri cubi"<<endl;
@@ -193,7 +192,7 @@ int main ()
             cout<<x; cout<<"decimetri cubi ="<<x/1000<<"metri cubi"<<endl;
              cout<<x; cout<<"decimetri cubi ="<<x/1000<<"centimetri cubi"<<endl;
               cout<<x; cout<<"decimetri cubi ="<<x/1000000<<"milimetri cubi"<<endl;}
-       else if(var=="decametri cubi")
+       else if(var=="decametri_cubi")
          { cin>>x;
          cout<<x; cout<<"decametri cubi ="<<x/1000000<<"kilometri cubi"<<endl;
           cout<<x; cout<<"decametri cubi ="<<x/1000<<"hectometri cubi"<<endl;
@@ -201,7 +200,7 @@ int main ()
             cout<<x; cout<<"decametri cubi ="<<x*1000000<<"decimetri cubi"<<endl;
              cout<<x; cout<<"decametri cubi ="<<x*1000000000<<"centimetri cubi"<<endl;
               cout<<x; cout<<"decametri cubi ="<<x*1000000000000<<"milimetri cubi"<<endl;}
-      else  if(var=="hectometri cubi")
+      else  if(var=="hectometri_cubi")
          { cin>>x;
          cout<<x; cout<<"hectometri cubi ="<<x/1000<<"kilometri cubi"<<endl;
           cout<<x; cout<<"hectometri cubi ="<<x*1000<<"decametri cubi"<<endl;
@@ -209,7 +208,7 @@ int main ()
             cout<<x; cout<<"hectometri cubi ="<<x*1000000000<<"decimetri cubi"<<endl;
              cout<<x; cout<<"hectometri cubi ="<<x*1000000000000<<"centimetri cubi"<<endl;
               cout<<x; cout<<"hectometri cubi ="<<x*1000000000000000<<"milimetri cubi"<<endl;}
-       else if(var=="milimetri cubi")
+       else if(var=="milimetri_cubi")
         {cin>>x;
          cout<<x; cout<<"milimetri cubi ="<<x/1000000000000000000<<" kilometri cubi"<<endl;
           cout<<x; cout<<"milimetri cubi ="<<x/1000000000000000<<" hectometri cubi"<<endl;
@@ -217,7 +216,7 @@ int main ()
             cout<<x; cout<<"milimetri cubi "<<x/1000000<<" decimetri cubi"<<endl;
              cout<<x; cout<<"milimetri cubi ="<<x/1000<<" centimetri cubi"<<endl;
               cout<<x; cout<<"milimetri cubi ="<<x/1000000000<<" metri cubi"<<endl;}
-      else  if(var=="kilometri cubi")
+      else  if(var=="kilometri_cubi")
           { cin>>x;
          cout<<x; cout<<"kilometri cubi ="<<x*1000<<"hectometri cubi"<<endl;
           cout<<x; cout<<"kilometri cubi =10^9*"<<x<<"metri cubi"<<endl;
@@ -225,6 +224,11 @@ int main ()
             cout<<x; cout<<"kilometri cubi =10^12*"<<x<<"decimetri cubi"<<endl;
              cout<<x; cout<<"kilometri cubi =10^15*"<<x<<"centimetri cubi"<<endl;
               cout<<x; cout<<"kilometri cubi =10^18*"<<x<<"milimetri cubi"<<endl;}
+
+
+
+
+
 
     //Temperatura!!!!!
   else if(var=="Fahrenheit")
@@ -365,3 +369,69 @@ int main ()
 
 
 
+
+
+
+
+       //!!!!Consum combustibil
+
+ else   if(var=="litri/100km")
+    {cin>>x;
+    cout<<x; cout<<"litri/100km ="<<100*3.78/1.6/x<<"mile/galon"<<endl;
+    cout<<x; cout<<"litri/100km ="<<100/x<<"kilometri la litru"<<endl;
+    }
+ else    if(var=="mile/galon")
+    {cin>>x;
+    cout<<x; cout<<"mile/galon ="<<100*3.78/1.6/x<<"litri/100km"<<endl;
+    cout<<x; cout<<"mile/galon ="<<100/100*3.78/1.6/x<<"kilometri la litru"<<endl;
+    }
+  else      if(var=="kilometri la litru")
+    {cin>>x;
+    cout<<x; cout<<"kilometri la litru ="<<100*3.768/1.6/x/100*x<<"mile/galon"<<endl;
+    cout<<x; cout<<"kilometri la litru ="<<100*x<<"litri/100km"<<endl;}
+
+
+    //!!! Densitate
+ else   if(var=="kg/m^3")
+{ cin>>x;
+cout<<x; cout<<"kg/m^3 ="<<x/1000000<<"kg/cm^3"<<endl;
+cout<<x; cout<<"kg/m^3 ="<<x*1000<<"g/m^3"<<endl;
+cout<<x; cout<<"kg/m^3 ="<<x/1000<<"g/cm^3"<<endl;
+}
+  else  if(var=="kg/cm^3")
+{ cin>>x;
+cout<<x; cout<<"kg/cm^3 ="<<x*1000000<<"kg/m^3"<<endl;
+cout<<x; cout<<"kg/cm^3 ="<<x*1000000000<<"g/m^3"<<endl;
+cout<<x; cout<<"kg/cm^3 ="<<x*1000<<"g/cm^3"<<endl;
+}
+  else  if(var=="g/m^3")
+{ cin>>x;
+cout<<x; cout<<"g/m^3 ="<<x/1000/1000000<<"kg/cm^3"<<endl;
+cout<<x; cout<<"g/m^3 ="<<x/1000<<"kg/m^3"<<endl;
+cout<<x; cout<<"g/m^3 ="<<x/1000/1000<<"g/cm^3"<<endl;}
+  else  if(var=="g/cm^3")
+{ cin>>x;
+cout<<x; cout<<"g/cm^3 ="<<x/1000<<"kg/cm^3"<<endl;
+cout<<x; cout<<"g/cm^3 ="<<x*1000000<<"g/m^3"<<endl;
+cout<<x; cout<<"g/cm^3 ="<<x*1000<<"kg/m^3"<<endl;
+}
+
+
+//!!!!Energie
+else if(var=="jouli")
+    {cin>>x;
+    cout<<x; cout<<"jouli ="<<x/4184<<"kcal"<<endl;
+    cout<<x; cout<<"jouli ="<<x/4.184<<"cal"<<endl;
+    }
+else if(var=="kcal")
+  {cin>>x;
+  cout<<x; cout<<"kcal ="<<x*4184<<" jouli"<<endl;
+  cout<<x; cout<<"kcal ="<<x*4184/4.184<<" cal"<<endl;
+  }
+else if(var=="cal")
+{cin>>x;
+cout<<x; cout<<"cal ="<<x*4.184/4184<<" kcal"<<endl;
+cout<<x; cout<<"cal ="<<x*4.184<<" jouli"<<endl;
+}
+i++;}
+return 0;}
