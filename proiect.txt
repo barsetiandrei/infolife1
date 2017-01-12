@@ -1,0 +1,2 @@
+Proiectul este realizat in CodeBlocks.
+Primeste date de la tastatura si afiseaza rezultatul.
