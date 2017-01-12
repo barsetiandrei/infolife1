@@ -226,6 +226,142 @@ int main ()
              cout<<x; cout<<"kilometri cubi =10^15*"<<x<<"centimetri cubi"<<endl;
               cout<<x; cout<<"kilometri cubi =10^18*"<<x<<"milimetri cubi"<<endl;}
 
+    //Temperatura!!!!!
+  else if(var=="Fahrenheit")
+        {cin>>x;
+    cout<<x; cout<<"grade Fahrenheit ="<<(x-32)/1.8<<"grade Celsius"<<endl;
+    cout<<x; cout<<"grade Fahrenheit ="<<(x-32)/1.8+273.15<<"grade Kelvin"<<endl;}
+
+   else    if(var=="Celsius")
+        {cin>>x;
+    cout<<x; cout<<"grade Celsius ="<<x+273.15<<"grade Kelvin"<<endl;
+    cout<<x; cout<<"grade Celsius ="<<x*1.8+32<<"grade Fahrenheit"<<endl;}
+
+    else   if(var=="Kelvin")
+       {cin>>x;
+    cout<<x; cout<<"grade Kelvin ="<<(x-273.15)*1.8+32<<"grade Fahrenheit"<<endl;
+    cout<<x; cout<<"grade Kelvin ="<<x-273.15<<"grade Celsius"<<endl;}
+
+
+
+    //Masa!!!!
+  else  if(var=="kilograme")
+        {cin>>x;
+        cout<<x; cout<<"kilograme ="<<x*1000<<"grame"<<endl;
+         cout<<x; cout<<"kilograme ="<<x*100<<"hectograme"<<endl;
+          cout<<x; cout<<"kilograme ="<<x*10<<"decagrame"<<endl;
+           cout<<x; cout<<"kilograme ="<<x/1000<<"miligrame"<<endl;
+            cout<<x; cout<<"kilograme ="<<x/10<<"decigrame"<<endl;
+             cout<<x; cout<<"kilograme ="<<x/100<<"centigrame"<<endl;
+              cout<<x; cout<<"kilograme ="<<x*1000<<"tone"<<endl;}
+
+    else    if(var=="hectogram")
+         { cin>>x;
+         cout<<x; cout<<"hectograme ="<<x*1000<<"kilograme"<<endl;
+          cout<<x; cout<<"hectograme ="<<x*1000<<"decagrame"<<endl;
+           cout<<x; cout<<"hectograme ="<<x*1000<<"miligrame"<<endl;
+            cout<<x; cout<<"hectograme ="<<x*1000<<"decigrame"<<endl;
+             cout<<x; cout<<"hectograme ="<<x*1000<<"centigrame"<<endl;
+              cout<<x; cout<<"hectograme ="<<x*1000<<"grame"<<endl;
+               cout<<x; cout<<"hectograme ="<<x*1000<<"tone"<<endl;}
+     else   if(var=="decagram")
+         { cin>>x;
+         cout<<x; cout<<"decagrame ="<<x*1000<<"kilograme"<<endl;
+          cout<<x; cout<<"decagrame ="<<x*1000<<"grame"<<endl;
+           cout<<x; cout<<"decagrame ="<<x*1000<<"decigrame"<<endl;
+            cout<<x; cout<<"decagrame ="<<x*1000<<"centigrame"<<endl;
+             cout<<x; cout<<"decagrame ="<<x*1000<<"miligrame"<<endl;
+              cout<<x; cout<<"decagrame ="<<x*1000<<"hectograme"<<endl;}
+      else  if(var=="decigram")
+         { cin>>x;
+         cout<<x; cout<<"decigrame="<<x*1000<<"kilograme"<<endl;
+          cout<<x; cout<<"decigrame ="<<x*1000<<"grame"<<endl;
+           cout<<x; cout<<"decigrame ="<<x*1000<<"decagrame"<<endl;
+            cout<<x; cout<<"decigrame ="<<x*1000<<"centigrame"<<endl;
+             cout<<x; cout<<"decigrame ="<<x*1000<<"miligrame"<<endl;
+              cout<<x; cout<<"decigrame ="<<x*1000<<"hectograme"<<endl;
+               cout<<x; cout<<"decigrame ="<<x*1000<<"tone"<<endl;}
+      else  if(var=="gram")
+         { cin>>x;
+         cout<<x; cout<<"grame ="<<x/1000<<"kilograme"<<endl;
+          cout<<x; cout<<"grame ="<<x/10<<"decagrame"<<endl;
+           cout<<x; cout<<"grame ="<<x*10<<"decigrame"<<endl;
+            cout<<x; cout<<"grame ="<<x/100<<"hectograme"<<endl;
+             cout<<x; cout<<"grame ="<<x*100<<"centigrame"<<endl;
+              cout<<x; cout<<"grame ="<<x*1000<<"miligrame"<<endl;
+               cout<<x; cout<<"grame ="<<x/1000000<<"tone"<<endl;}
+     else   if(var=="miligram")
+        {cin>>x;
+         cout<<x; cout<<"miligrame ="<<x/1000000<<"kilograme"<<endl;
+          cout<<x; cout<<"miligrame ="<<x/10000<<"hectograme"<<endl;
+           cout<<x; cout<<"miligrame ="<<x/1000<<"decagrame"<<endl;
+            cout<<x; cout<<"miligrame ="<<x/1000<<"grame"<<endl;
+             cout<<x; cout<<"miligrame ="<<x/100<<"decigrame"<<endl;
+              cout<<x; cout<<"miligrame ="<<x/10<<"centigrame"<<endl;
+               cout<<x; cout<<"miligrame =10^(-9)"<<x<<"tone"<<endl;}
+      else  if(var=="centigram")
+          { cin>>x;
+         cout<<x; cout<<"centigrame ="<<x/100<<"grame"<<endl;
+          cout<<x; cout<<"centigrame ="<<x/10000<<"hectograme"<<endl;
+           cout<<x; cout<<"centigrame ="<<x/1000<<"decagrame"<<endl;
+            cout<<x; cout<<"centigrame ="<<x/10<<"decigrame"<<endl;
+             cout<<x; cout<<"centigrame ="<<x*10<<"miligrame"<<endl;
+              cout<<x; cout<<"centigrame ="<<x/100000<<"kilograme"<<endl;
+               cout<<x; cout<<"centigrame ="<<x*1000<<"tone"<<endl;}
+      else  if(var=="tone")
+               { cin>>x;
+         cout<<x; cout<<"tone ="<<x*1000<<"kilograme"<<endl;
+          cout<<x; cout<<"tone ="<<x*10000<<"hectograme"<<endl;
+           cout<<x; cout<<"tone ="<<x*100000<<"decagrame"<<endl;
+            cout<<x; cout<<"tone ="<<x*1000000<<"grame"<<endl;
+             cout<<x; cout<<"tone ="<<x*10000000<<"decigrame"<<endl;
+              cout<<x; cout<<"tone ="<<x*100000000<<"centigrame"<<endl;
+               cout<<x; cout<<"tone ="<<x*1000000000<<"miligrame"<<endl;}
+
+
+
+
+
+
+
+             // Presiune !!!!
+      else  if(var=="bar")
+             { cin>>x;
+         cout<<x; cout<<"bar ="<<x*14.21<<"psi"<<endl;}
+      else   if(var=="psi")
+             { cin>>x;
+         cout<<x; cout<<"psi ="<<x/14.21<<"bar"<<endl;}
+
+
+
+
+
+             // !!!!Timp
+    else  if(var=="minute")
+      { cin>>x;
+      cout<<x; cout<<"minute ="<<x*60<<"secunde"<<endl;
+      cout<<x; cout<<"minute ="<<x*60000<<"milisecunde"<<endl;
+      cout<<x; cout<<"minute ="<<x/60<<"ore"<<endl;
+       }
+    else    if(var=="secunde")
+      { cin>>x;
+      cout<<x; cout<<"secunde ="<<x/60<<"minute"<<endl;
+      cout<<x; cout<<"secunde ="<<x*1000<<"milisecunde"<<endl;
+      cout<<x; cout<<"secunde ="<<x/3600<<"ore"<<endl;
+       }
+    else    if(var=="milisecunde")
+      { cin>>x;
+      cout<<x; cout<<"milisecunde ="<<x/60000<<"secunde"<<endl;
+      cout<<x; cout<<"milisecunde ="<<x/60000/60<<"minute"<<endl;
+      cout<<x; cout <<"milisecunde ="<<x/60000/3600<<"ore"<<endl;
+      }
+     else   if(var=="ore")
+      { cin>>x;
+      cout<<x; cout<<"ore ="<<x*3600<<"secunde"<<endl;
+      cout<<x; cout<<"ore ="<<x*3600*60000<<"milisecunde"<<endl;
+      cout<<x; cout<<"ore ="<<x*60<<"minute"<<endl;
+       }
+
 
 
 
